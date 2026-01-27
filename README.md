@@ -8,15 +8,13 @@ Running this project produces a scored output file for new applicants using the 
 
 ---
 
-## Project Overview
+## What This Project Does
 
-The original model was built in RapidMiner as part of an applied data analytics assignment. RapidMiner was used to:
-
-- prepare the data,
-- construct a decision tree,
-- generate predictions and confidence values for new applicants.
-
-To verify conceptual understanding beyond the visual tool, the RapidMiner decision tree was exported as text and reconstructed in Python. Instead of training a new model, this project treats the RapidMiner tree as the **source of truth** and evaluates new records by following the same decision paths and leaf distributions.
+- Reads an insurance dataset from `data/InsuranceData.xlsx`
+- Loads the RapidMiner decision tree export from `rapidminer/rapidminer_tree_exports.txt`
+- Converts each root-to-leaf path into explicit rules
+- Scores every record in the **New Applicants** sheet by following the same decision paths RapidMiner uses
+- Writes a scored CSV output containing predictions and confidence values
 
 ---
 
@@ -24,9 +22,9 @@ To verify conceptual understanding beyond the visual tool, the RapidMiner decisi
 
 This implementation does **not** train a new decision tree.
 
-Instead, it:
+Instead, it treats the RapidMiner tree export as the **source of truth** and:
 
 - parses the exported RapidMiner decision tree text,
-- converts each root-to-leaf path into explicit, ordered rules,
+- converts each root-to-leaf path into ordered rules,
 - computes confidence values using RapidMiner’s leaf class counts:
 
