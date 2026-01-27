@@ -1,0 +1,69 @@
+Q1) Using the graph view of the decision tree model, what is the first predictive independent variable in the tree?
+
+Comprehensive Claims
+Late Payments
+At Fault Accidents
+Moving Violations
+
+Q2) Using the graph view of the decision tree model, if a person had one or more at fault accident and was over age 65, what Insurance Category would the model predict?
+
+No prediction would be made for this new applicant
+High Risk-Do Not Insure
+Low Risk
+Moderate Risk
+
+Q3) Using the graph view of the decision tree model, what Insurance Category would the model predict for a 47-year-old man with no comprehensive claims, no late payments, no at fault accidents, and only one claim on his policy overall?
+
+Low Risk
+No prediction would be made for this new applicant
+High Risk-Do Not Insure
+Moderate Risk
+
+Q4) Using the graph view of the decision tree model, if a 55-year-old woman had two at fault accidents, several moving violations, and three comprehensive claims, which attribute would the decision tree use to determine if this woman will be predicted as Potentially High Risk or High Risk-Do Not Insure?
+
+Late Payments
+At Fault Accidents
+Payment Method
+Gender
+
+Q5) Examining the predictions for the New Applicants, which Insurance Category is predicted most frequently?
+
+Low Risk
+High Risk-Do Not Insure
+Moderate Risk
+Potentially High Risk
+
+Q6) Examining the predictions for the New Applicants, how many predictions of Potentially High Risk are generated?
+
+32
+30
+4
+62
+
+Q7) Of the New Applicants records predicted to be High Risk-Do Not Insure, what is the highest post-probability confidence percentage?
+
+50%
+84.6%
+100%
+12.2%
+
+Q8) Of the New Applicants records predicted to be Low Risk, how many have post-probability confidence percentages of 100%?
+
+30
+5
+17
+0
+
+Q9) If a New Applicant is predicted by the decision tree to be Potentially High Risk with 63.4% confidence, what is the post-probability confidence that that person may actually be High Risk-Do Not Insure?
+
+20%
+36.6%
+39.5%
+9.1%
+
+Q10) Of the New Applicants predicted to be Moderate Risk, how many have post-probability confidence percentages below 75%?
+
+6
+30
+18
+0
