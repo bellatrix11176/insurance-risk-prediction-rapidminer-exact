@@ -1,19 +1,73 @@
-Project Overview
+# Insurance Data Analysis (RapidMiner)
 
-The project analyzes an insurance dataset through a series of structured assignment questions (Q1–Q10), each requiring specific data preparation, exploration, and decision tree logic. RapidMiner was used to visually design and execute the full analytical workflow, including data cleaning, attribute selection, and decision tree generation.
+This repository contains an applied data analysis project focused on analyzing insurance applicant data using **RapidMiner**, with a parallel **Python implementation** used to reproduce and validate the same analytical logic programmatically.
 
-To demonstrate conceptual understanding beyond the visual analytics tool, the same analytical steps were replicated in Python. This included manually implementing decision logic and generating equivalent outputs to validate the results produced in RapidMiner.
+The project emphasizes decision tree interpretability, process validation, and understanding model behavior rather than production-level optimization.
 
-Tools & Methods
-RapidMiner Studio (visual workflow design and modeling)
-Python (programmatic replication and validation)
-Excel (data source)
+---
 
-Repository Contents
-RapidMiner-generated decision tree outputs (PNG)
-Text-based menu tree exported from RapidMiner (.txt)
-Assignment-aligned artifacts corresponding to questions Q1–Q10
-Python scripts reproducing the RapidMiner logic
+## Project Overview
 
-Focus & Scope
-This project emphasizes process, validation, and learning outcomes rather than production-level optimization. The goal is to demonstrate understanding of data preparation, decision tree logic, and cross-tool translation between visual analytics and code-based implementations.
+The analysis was structured around a set of predefined assignment questions (Q1–Q10), each designed to evaluate specific aspects of data preparation, decision tree structure, predictions, and confidence levels.
+
+RapidMiner was used to visually design and execute the full analytical workflow, including:
+- data cleaning and preparation
+- attribute selection
+- decision tree generation
+- prediction and confidence evaluation for new applicants
+
+To demonstrate conceptual understanding beyond the visual analytics tool, the same analytical steps were later replicated in Python. This included manually implementing decision logic and generating equivalent outputs to confirm the correctness of the results produced in RapidMiner.
+
+---
+
+## Assignment Questions (Q1–Q10)
+
+The file `Decision_Tree_Questions.txt` documents the full set of assignment questions used to guide the analysis. These questions provide the interpretive framework for understanding the decision tree outputs and predictions.
+
+The questions focus on:
+- identifying the most predictive attributes in the decision tree
+- interpreting classification paths and predicted insurance categories
+- evaluating prediction frequencies for new applicants
+- analyzing post-probability confidence levels
+- understanding how the model distinguishes between risk categories
+
+This file is included to ensure transparency and traceability between the model outputs and the analytical questions they were designed to answer.
+
+---
+
+## Tools & Methods
+
+- **RapidMiner Studio** – visual workflow design and decision tree modeling  
+- **Python** – programmatic replication and validation of decision logic  
+- **Excel** – source data for analysis  
+
+---
+
+## Repository Structure
+
+- `data/`  
+  Contains the raw insurance dataset used in both RapidMiner and Python analyses.
+
+- `rapidminer/`  
+  Contains the exported RapidMiner process (`.rmp`), screenshots of the workflow and outputs, and the assignment questions file.
+
+- `python/` (or `src/`)  
+  Contains Python scripts and requirements used to replicate and validate the RapidMiner analysis.
+
+---
+
+## Scope & Focus
+
+This project is intentionally structured as a learning and validation exercise. The emphasis is on:
+- understanding decision tree logic
+- interpreting model outputs and confidence values
+- translating visual analytics workflows into code
+- documenting analytical reasoning clearly
+
+The goal is not production deployment, but **demonstrating applied understanding and systems-level thinking** across tools.
+
+---
+
+## Notes
+
+A Python-based implementation reproducing the RapidMiner workflow is included to highlight cross-tool consistency and analytical validation.
