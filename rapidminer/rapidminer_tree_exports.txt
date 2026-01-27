@@ -1,0 +1,89 @@
+Tree
+At Fault Accidents > 0.500
+|   Age > 65.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=3, Potentially High Risk=0, Low Risk=1}
+|   Age ≤ 65.500
+|   |   Age > 64.500
+|   |   |   Number of Claims > 2: High Risk - Do Not Insure {High Risk - Do Not Insure=3, Moderate Risk=0, Potentially High Risk=0, Low Risk=0}
+|   |   |   Number of Claims ≤ 2: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=1}
+|   |   Age ≤ 64.500
+|   |   |   At Fault Accidents > 1.500
+|   |   |   |   Age > 59.500
+|   |   |   |   |   Moving Violations = No
+|   |   |   |   |   |   Number of Claims > 3: High Risk - Do Not Insure {High Risk - Do Not Insure=2, Moderate Risk=0, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   |   |   Number of Claims ≤ 3: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=1}
+|   |   |   |   |   Moving Violations = Yes
+|   |   |   |   |   |   Late Payments = No
+|   |   |   |   |   |   |   Number of Claims > 2.500: Potentially High Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=2, Low Risk=0}
+|   |   |   |   |   |   |   Number of Claims ≤ 2.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=5, Potentially High Risk=1, Low Risk=0}
+|   |   |   |   |   |   Late Payments = Yes: Potentially High Risk {High Risk - Do Not Insure=1, Moderate Risk=0, Potentially High Risk=9, Low Risk=0}
+|   |   |   |   Age ≤ 59.500
+|   |   |   |   |   Moving Violations = No: Potentially High Risk {High Risk - Do Not Insure=1, Moderate Risk=0, Potentially High Risk=11, Low Risk=0}
+|   |   |   |   |   Moving Violations = Yes
+|   |   |   |   |   |   At Fault Accidents > 2.500: Potentially High Risk {High Risk - Do Not Insure=21, Moderate Risk=0, Potentially High Risk=48, Low Risk=0}
+|   |   |   |   |   |   At Fault Accidents ≤ 2.500
+|   |   |   |   |   |   |   Age > 17.500
+|   |   |   |   |   |   |   |   Payment Method = Bank Transfer: Potentially High Risk {High Risk - Do Not Insure=15, Moderate Risk=0, Potentially High Risk=26, Low Risk=0}
+|   |   |   |   |   |   |   |   Payment Method = Credit Card: High Risk - Do Not Insure {High Risk - Do Not Insure=9, Moderate Risk=0, Potentially High Risk=9, Low Risk=0}
+|   |   |   |   |   |   |   |   Payment Method = Monthly Billing: Potentially High Risk {High Risk - Do Not Insure=7, Moderate Risk=0, Potentially High Risk=9, Low Risk=0}
+|   |   |   |   |   |   |   |   Payment Method = Website Account: Potentially High Risk {High Risk - Do Not Insure=17, Moderate Risk=1, Potentially High Risk=22, Low Risk=3}
+|   |   |   |   |   |   |   Age ≤ 17.500: Potentially High Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=4, Low Risk=0}
+|   |   |   At Fault Accidents ≤ 1.500
+|   |   |   |   Age > 21.500
+|   |   |   |   |   Late Payments = No
+|   |   |   |   |   |   Marital Status = M
+|   |   |   |   |   |   |   Comprehensive Claims = No
+|   |   |   |   |   |   |   |   Age > 42: High Risk - Do Not Insure {High Risk - Do Not Insure=2, Moderate Risk=0, Potentially High Risk=1, Low Risk=2}
+|   |   |   |   |   |   |   |   Age ≤ 42: Potentially High Risk {High Risk - Do Not Insure=1, Moderate Risk=4, Potentially High Risk=5, Low Risk=1}
+|   |   |   |   |   |   |   Comprehensive Claims = Yes: Moderate Risk {High Risk - Do Not Insure=3, Moderate Risk=12, Potentially High Risk=2, Low Risk=2}
+|   |   |   |   |   |   Marital Status = S
+|   |   |   |   |   |   |   Gender = F
+|   |   |   |   |   |   |   |   Number of Claims > 2.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   |   |   |   |   Number of Claims ≤ 2.500: Potentially High Risk {High Risk - Do Not Insure=2, Moderate Risk=2, Potentially High Risk=4, Low Risk=0}
+|   |   |   |   |   |   |   Gender = M: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=10, Potentially High Risk=3, Low Risk=0}
+|   |   |   |   |   Late Payments = Yes
+|   |   |   |   |   |   Age > 28.500
+|   |   |   |   |   |   |   Age > 34.500: Potentially High Risk {High Risk - Do Not Insure=10, Moderate Risk=4, Potentially High Risk=35, Low Risk=1}
+|   |   |   |   |   |   |   Age ≤ 34.500
+|   |   |   |   |   |   |   |   Gender = F: High Risk - Do Not Insure {High Risk - Do Not Insure=4, Moderate Risk=0, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   |   |   |   |   Gender = M: Potentially High Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=2, Low Risk=1}
+|   |   |   |   |   |   Age ≤ 28.500
+|   |   |   |   |   |   |   Age > 24.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   |   |   |   Age ≤ 24.500: Potentially High Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=4, Low Risk=0}
+|   |   |   |   Age ≤ 21.500: Potentially High Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=8, Low Risk=0}
+At Fault Accidents ≤ 0.500
+|   Number of Claims > 3.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=21, Potentially High Risk=0, Low Risk=0}
+|   Number of Claims ≤ 3.500
+|   |   Age > 20.500
+|   |   |   Late Payments = No
+|   |   |   |   Age > 25.500
+|   |   |   |   |   Age > 26.500
+|   |   |   |   |   |   Age > 41.500: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=9, Potentially High Risk=0, Low Risk=96}
+|   |   |   |   |   |   Age ≤ 41.500
+|   |   |   |   |   |   |   Payment Method = Bank Transfer
+|   |   |   |   |   |   |   |   Age > 38.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=6, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   |   |   |   |   Age ≤ 38.500: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=3, Potentially High Risk=0, Low Risk=9}
+|   |   |   |   |   |   |   Payment Method = Credit Card
+|   |   |   |   |   |   |   |   Number of Claims > 1.500: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=0, Low Risk=2}
+|   |   |   |   |   |   |   |   Number of Claims ≤ 1.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=6, Potentially High Risk=0, Low Risk=1}
+|   |   |   |   |   |   |   Payment Method = Monthly Billing: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=0, Low Risk=11}
+|   |   |   |   |   |   |   Payment Method = Website Account: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=21}
+|   |   |   |   |   Age ≤ 26.500
+|   |   |   |   |   |   Comprehensive Claims = No: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=0, Low Risk=2}
+|   |   |   |   |   |   Comprehensive Claims = Yes: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   Age ≤ 25.500
+|   |   |   |   |   Comprehensive Claims = No
+|   |   |   |   |   |   Number of Claims > 1.500: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=0, Low Risk=2}
+|   |   |   |   |   |   Number of Claims ≤ 1.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=4, Potentially High Risk=0, Low Risk=1}
+|   |   |   |   |   Comprehensive Claims = Yes: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=8, Potentially High Risk=0, Low Risk=0}
+|   |   |   Late Payments = Yes
+|   |   |   |   Age > 63.500
+|   |   |   |   |   Age > 64.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=2, Potentially High Risk=0, Low Risk=0}
+|   |   |   |   |   Age ≤ 64.500: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=0, Low Risk=4}
+|   |   |   |   Age ≤ 63.500
+|   |   |   |   |   Age > 27.500
+|   |   |   |   |   |   Age > 34.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=49, Potentially High Risk=0, Low Risk=7}
+|   |   |   |   |   |   Age ≤ 34.500
+|   |   |   |   |   |   |   Number of Claims > 2.500: Low Risk {High Risk - Do Not Insure=0, Moderate Risk=0, Potentially High Risk=0, Low Risk=2}
+|   |   |   |   |   |   |   Number of Claims ≤ 2.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=3, Potentially High Risk=0, Low Risk=1}
+|   |   |   |   |   Age ≤ 27.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=7, Potentially High Risk=0, Low Risk=0}
+|   |   Age ≤ 20.500: Moderate Risk {High Risk - Do Not Insure=0, Moderate Risk=15, Potentially High Risk=0, Low Risk=0}
