@@ -28,3 +28,5 @@ Instead, it treats the RapidMiner tree export as the **source of truth** and:
 - converts each root-to-leaf path into ordered rules,
 - computes confidence values using RapidMiner’s leaf class counts:
 
+🌐 **PixelKraze Analytics (Portfolio):** https://pixelkraze.com/?utm_source=github&utm_medium=readme&utm_campaign=portfolio&utm_content=homepage
+
